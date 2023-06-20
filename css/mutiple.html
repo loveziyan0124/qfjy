@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS样式优先级</title>
+    <!--HEAD里添加的 后添加的优先级最高-->
+    <!--引入外部样式-->
+    <link rel="stylesheet" href="mystyle.css">
+    <!--内部样式-->
+    <style>
+        h1{
+            color:blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <!--内联样式 优先级最高TOP1-->
+    <h1 style="color:red;text-align:center;">
+        快速上手  
+    </h1>
+    <p style="color:blue;">
+        Apache ECharts 支持多种下载方式，可以在下一篇教程安装中查看所有方式。这里，我们以从 jsDelivr CDN 上获取为例，介绍如何快速安装。
+    </p>
+</body>
+</html>

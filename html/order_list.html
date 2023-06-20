@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--1. 列表中涉及到的都是双标签 块元素 
+    2.用的最多的是无序列表
+    -->
+    <!--这是有序列表的介绍-->
+    <ol type="A" start="6">
+        <li>把冰箱门打开</li>
+        <li>把大象装进去</li>
+        <li>把冰箱门关上</li>
+    </ol>
+
+    <ol type="i" start="1">
+        <li>把冰箱门打开</li>
+        <li>把大象装进去</li>
+        <li>把冰箱门关上</li>
+    </ol>
+    <!-- 无序列表ul unorderlist desc实心黑点 circle空心圆 square方块 none没有-->
+    <ul type="desc">
+        <li>html</li>
+        <li type="circle">css</li>
+        <li>javascript</li>
+    </ul>
+    <!-- 列表可以嵌套 -->
+    <ul>
+        <li>
+            北京市
+            <ul>
+                <li>海淀区</li>
+                <li>朝阳区</li>
+                <li>昌平区</li>
+            </ul>
+        </li>
+        <li>陕西省</li>
+        <li>河南省</li>
+    </ul>
+    <!-- 快捷键 ul>li*3>a[href=#]{内容} >父子关系-->
+    ul>li*3>a[href=#]{6000元喜宴16道菜有7成是预制} 
+    <ul>
+        <li><a href="#">6000元喜宴16道菜有7成是预制</a></li>
+        <li><a href="#">6000元喜宴16道菜有7成是预制</a></li>
+        <li><a href="#">6000元喜宴16道菜有7成是预制</a></li>
+    </ul>
+
+    <ul type="none">
+        <li>
+            1. <a href="#">发展历史</a>
+        </li>
+        <li>
+            2. <a href="#">管理团队</a>
+            <ul type="circle">
+                <li>
+                    <a href="#">董事会</a>
+                </li>
+                <li>
+                    <a href="#">管理</a>
+                </li>
+            </ul>
+        </li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    <!-- 快捷键dl>dt+dd*3 +兄弟关系 -->
+    <dl>
+        <dt>定义的主题1</dt>
+        <dd>描述1</dd>
+        <dd>描述2</dd>
+        <dd>描述3</dd>
+    </dl>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表单</title>
+</head>
+<body>
+    <!--input 文本框和密码框 默认显示文本框-->
+    <form action="">
+        请输入用户名：<input>
+        请输入用户名： <input type="text">
+        <!--br 折行显示-->
+        <br>
+        请输入密码： <input type="password">    
+    </form>
+
+    <!--textarea 多行文本框-->
+    <form action="">
+        请填写详细地址： 
+        <br>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+    </form>
+
+    <!--input 单选框和多选框-->
+    <form action="">
+        <!--radio 单选框-->
+        选择性别：
+        <!--不加name属性每行自成一组 都可以选-->
+        <input type="radio">男
+        <input type="radio">女
+        <br>
+
+        <!--加了name属性-->
+        <input type="radio" name="gender">男
+        <input type="radio" name="gender">女
+        <br>
+
+        <!--checkbox 多选框-->
+        前端基础包括：<input type="checkbox">HTML
+        <input type="checkbox">CSS
+        <input type="checkbox">JAVASCRIPT
+        <br>
+
+        <!--checked 默认选中项-->
+        前端基础包括：<input type="checkbox" checked>HTML
+        <input type="checkbox">CSS
+        <input type="checkbox">JAVASCRIPT
+        <br>
+    </form>
+
+    <form action="">
+        <!--select 下拉菜单 单选-->
+        出生日期：
+        <select>
+            <!--option{199$}*9 + enter键-->
+            <option value="">1991</option>
+            <option value="">1992</option>
+            <option value="">1993</option>
+            <option value="">1994</option>
+            <option value="" selected>1995</option>
+            <option value="">1996</option>
+            <option value="">1997</option>
+            <option value="">1998</option>
+            <option value="">1999</option>
+        </select>
+        <br>
+
+        <!--select 下拉菜单 multiple多选-->
+        您感兴趣的领域：
+        <select name="" id="" multiple size="8">
+            <!--复制操作：光标放置在“”中，按住alt+shift,敲击7次向下的箭头-->
+            <option value="音乐"></option>
+            <option value="绘画"></option>
+            <option value="办公"></option>
+            <option value="考公"></option>
+            <option value="技术"></option>
+            <option value="娱乐"></option>
+            <option value="新闻"></option>
+            <option value="互联网"></option>
+        </select>
+        <br>
+
+        <!--input 文件选择控件 file-->
+        附件：
+        <input type="file">
+        <br>
+
+        <!--label 提高用户体验，扩大可点范围 需要唯一id-->
+        <label for="username">点击文本也显示光标：</label>
+        <input type="text" id="username">
+        <br>
+
+        <!--readonly 默认只读属性 不可删除和修改-->
+        您的手机号：<input type="text" value="150****0000" readonly>
+        <br>
+
+        选择性别：
+        <!--disabled 禁用设置-->
+        <!--input[type="radio" name="gender"]*3-->
+        <input type="radio" name="gender">男
+        <input type="radio" name="gender">女
+        <input type="radio" name="gender" disabled>保密
+
+    </form>
+</body>
+</html>
